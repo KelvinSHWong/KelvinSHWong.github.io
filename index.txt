@@ -4,7 +4,7 @@ Kelvin Wong - Data Analyst from Hong Kong
 
 #---------- HEADER ----------#
 
-Ethan Ward
+Kelvin Wong
 
 aria-label = Toggle Menu
 
@@ -38,9 +38,9 @@ alt = I'm developer from New York
 
 Hello I'm
 
-Ethan Ward
+Kelvin Wong
 
-Web Developer from New York
+Data Analyst from Hong Kong
 
 Adipisicing elit. Neque nulla voluptatum eos repellat deserunt nesciunt tempore porro totam.
 
