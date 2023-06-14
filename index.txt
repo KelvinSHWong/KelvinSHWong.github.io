@@ -1,24 +1,24 @@
-vCard - Personal Portfolio
+Kelvin Wong
 
 # sidebar
 
 alt = Richard hanrick
-Richard hanrick
-Web developer
+Kelvin Wong
+Data Analyst
 
 Show Contacts
 
 Email
-richard@example.com
+kelvinshwong00@gmail.com
 
 Phone
-+1 (213) 352-2795
++852 9250 9331
 
 Birthday
-June 23, 1982
+September 12, 2000
 
 Location
-Sacramento, California, USA
+Hong Kong
 
 # navbar
 
