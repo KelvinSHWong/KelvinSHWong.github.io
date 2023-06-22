@@ -1,0 +1,4 @@
+Color Code
+Electric Purple 1: #bb00ff
+Electric Purple 2: #8f00ff
+Plump Purple: #6331c8

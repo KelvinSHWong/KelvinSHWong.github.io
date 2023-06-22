@@ -1,7 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelvin Wong</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/438e3fde16.js" crossorigin="anonymous"></script><!--Fontawesome.com-->
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Data Analyst</p>
+      <h1>Hi, I'm <span>Kelvin</span><br>Wong from Hong Kong.</h1>
+    </div>
+  </div>  
+</div>
+<!---------About--------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/Personal_Photo.jpg"> <!--609 x 811-->
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          Kelvin is currently a data analyst at Bupa.
+          He has one year experience in data analytics and aims to become a data scientist equipped with statistics and programming skills.
+          He is also passionate about teaching mathematics and table tennis.
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links acitve-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('eca')">Extra-curricular</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Machine Learning</span><br>Python | Scikit-learn | TensorFlow | Keras | R</li>
+            <li><span>Data Visualization</span><br>Power BI | MS Excel</li>
+            <li><span>Data Engineering</span><br>MySQL | MS SQL Server | Azure Databricks</li>
+            <li><span>Automation</span><br>Power Automate | Power Apps | Selenium | VBA</li>
+            <li><span>Mathematics</span><br>Calculus | Linear Algebra | Probability and Statistics | Mathematical Logic | Game Theory</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Sep 2022 - Current</span><br>Data Analyst | Bupa</li>
+            <li><span>Apr 2023 - Current</span><br>Table Tennis Coach (Part-time) | Ping Zone Table Tennis Club</li>
+            <li><span>Jun 2022 - Aug 2022</span><br>Junior Data Scientist Intern |  The Lane Crawford Joyce Group</li>
+            <li><span>Jul 2021 - Aug 2021</span><br>Computer Vision Engineer Intern | InnoBlock Technology Limited</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Sep 2018 - Jul 2022</span><br>The Chinese University of Hong Kong<br>Bachelor of Science in Mathematics, Minor in Philosophy
+            <br>Second Class Upper Division Honours</li>
+            <li><span>Sep 2012 - Jun 2018</span><br>Christian Alliance S C Chan Memorial College<br>HKDSE: 5* in Mathematics and M2</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="eca">
+          <ul>
+            <li><span>Sep 2018 - Jul 2022</span><br>Team Member, CUHK Table Tennis Team</li>
+            <li><span>Sep 2018 - Jul 2022</span><br>Team Member, Shaw College Table Tennis Team</li>
+            <li><span>Mar 2019 - Feb 2020</span><br>General Secretary, CUHK Environment Science Society</li>
+            <li><span>Aug 2017</span><br>Credit Award, Enrichment Program for Young Mathematics Talents, CUHK</li>
+            <li><span>Aug 2017</span><br>High Distinction in Mathematics, Secondary School Mathematics and Science Competition, PolyU</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------Services--------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-magnifying-glass-chart"></i>
+        <h2>Data Analytics</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum blanditiis ratione odio accusamus sapiente dolorem fugit, corrupti quibusdam omnis praesentium beatae laboriosam sint vitae natus vero quos necessitatibus amet! Nobis.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-person-chalkboard"></i>
+        <h2>Mathematics Tutoring</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum blanditiis ratione odio accusamus sapiente dolorem fugit, corrupti quibusdam omnis praesentium beatae laboriosam sint vitae natus vero quos necessitatibus amet! Nobis.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+        <h2>Table Tennis Coaching</h2>
+        <p>
+          Rank 365th in Hong Kong (Division C)<br>
+          Table Tennis Coach, Ping Zone Table Tennis Club<br>
+          ex-Team Member, CUHK Table Tennis Team<br>
+          ex-Team Member, Shaw College Table Tennis Team<br>
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------Portfolio--------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png">
+        <div class="layer">
+          <h3>LCSD Form Filler</h3>
+          <p>Personal Project that auto-fills the application form for LCSD District Age Group Table Tennis Competitions.</p>
+          <a href="https://github.com/KelvinSHWong/LCSD-Form-Filler"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.jpg">
+        <div class="layer">
+          <h3>Sudoku Solver</h3>
+          <p>Personal Project that solves Sudoku puzzles in Python using recursion and backtracking.</p>
+          <a href="https://github.com/KelvinSHWong/Sudoku-Solver"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.jpg">
+        <div class="layer">
+          <h3>Preparing...</h3>
+          <p>Tutorials on Youtube about HKDSE Maths, M2 and University Maths.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/KelvinSHWong" class="btn">See more</a>
+  </div>
+</div>
+<!---------Contact--------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> kelvinshwong00@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> (852) 9250 9331</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/kelvinshwong/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/KelvinSHWong"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/sh_wong_/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="images/CV_KelvinWong.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2023 Kelvin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials.</p>
+  </div>
+</div>
+
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+
+</script>
+
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxkbyein7KKORBU1SbKmSQTXhQOjMEhxxK4rAixUupsuu7VXVaAmqL_QmoLGfu1almy_Q/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = "" 
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
 </body>
 </html>
