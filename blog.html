@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin Wong's Blog</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style_blog.css">
+    <script src="https://kit.fontawesome.com/438e3fde16.js" crossorigin="anonymous"></script><!--Fontawesome.com-->
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Kelvin Wong's Blog</p>
+                <h1>Recording my journey in mathematics, philosophy, data analytics, teaching and more.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------Blog--------->
+    <div id="blog">
+        <div class="container">
+            <h1 class="sub-title">My Blog</h1>
+            <div class="blog-list">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Introduction to Fallacies</h2>
+                    <p>
+                        Introduction to common logical fallacies with real-world examples.
+                    </p>
+                    <a href="preparing.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Science Interviews</h2>
+                    <p>
+                        Sharing how to prepare for the technical and quantitative interviews for data science positions,
+                        particularly SQL, Power BI, statistics and machine learning algorithms. 
+                    </p>
+                    <a href="preparing.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h2>Why I switch to Teaching</h2>
+                    <p>
+                        I decided to switch my career to teaching during my data analyst job.
+                        I'll share why I switched, what I've done and what obstacles I've faced.
+                    </p>
+                    <a href="preparing.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Road to Data Science</h2>
+                    <p>
+                        Sharing my journey in data science, including what I've studied, what internships and jobs I've applied 
+                        and how I've prepared for data science interviews.
+                    </p>
+                    <a href="preparing.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Life Motto & Quotes</h2>
+                    <p>
+                        Success is not final; Failure is not fatal; It is the courage to continue that counts.<br>
+                        -- Winston Churchill
+                    </p>
+                    <a href="preparing.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Kelvin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
