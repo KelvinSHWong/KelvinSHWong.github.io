@@ -80,6 +80,12 @@ nav ul li a:hover::after{
     padding: 30px 0;
 } */
 
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
 .blog-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -124,6 +130,112 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+/* ---------Timeline--------- */
+
+#timeline {
+    padding: 50px 0 0 0;
+}
+
+.tl {
+    padding: 50px 0;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tl::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.tl-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.tl-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #8f00ff;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #262626;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #262626;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #262626;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #262626 transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.tl-content {
+    padding: 20px 30px;
+    background-color: #262626;
+    position: relative;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.tl-content h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.tl-content h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* ---------Copyright--------- */
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -138,6 +250,7 @@ nav ul li a:hover::after{
 }
 
 /* ---------CSS for small screens--------- */
+
 nav .fas{
     display: none;
 }
@@ -196,5 +309,30 @@ nav .fas{
 
     .copyright{
         font-size: 14px;
+    }
+
+    .tl::after {
+        left: 31px;
+    }
+
+    .tl-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .tl-container::before {
+        left: 60px;
+        border: medium solid #262626;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #262626 transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
     }
 }
