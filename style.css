@@ -395,6 +395,11 @@ nav .fas{
         font-size: 25px;
     }
 
+    nav .fas.fa-bars{
+        position: fixed;
+        right: 30px;
+    }   /* sidemenu */
+
     nav ul{
         background: #8f00ff;
         position: fixed;
